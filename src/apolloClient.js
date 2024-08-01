@@ -5,12 +5,10 @@ import {
   ApolloLink,
 } from "@apollo/client/core";
 
-// Buat HttpLink dengan URI GraphQL endpoint
 const httpLink = new HttpLink({
   uri: "https://sirefcode.hasura.app/v1/graphql",
 });
 
-// Buat ApolloLink untuk menambahkan header autentikasi
 const authLink = new ApolloLink((operation, forward) => {
   operation.setContext({
     headers: {
@@ -21,10 +19,8 @@ const authLink = new ApolloLink((operation, forward) => {
   return forward(operation);
 });
 
-// Gabungkan authLink dan httpLink
 const link = authLink.concat(httpLink);
 
-// Buat instance ApolloClient
 const client = new ApolloClient({
   link,
   cache: new InMemoryCache(),

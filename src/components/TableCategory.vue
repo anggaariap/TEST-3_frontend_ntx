@@ -3,13 +3,13 @@
     <div class="flex justify-between mb-5">
       <router-link
         to="/create-category"
-        class="bg-blue-500 text-white py-2 px-4 rounded"
+        class="bg-green-700 text-white py-2 px-4 rounded"
       >
         Create Category
       </router-link>
       <router-link
         to="/create-product"
-        class="bg-blue-500 text-white py-2 px-4 rounded"
+        class="bg-green-700 text-white py-2 px-4 rounded"
       >
         Create Product
       </router-link>
@@ -27,7 +27,7 @@
               name: 'edit-category',
               params: { id: categoryGroup[0].category_id },
             }"
-            class="bg-yellow-400 py-1 px-2 rounded"
+            class="bg-blue-600 py-1 px-2 rounded"
           >
             Edit Category
           </router-link>
@@ -61,13 +61,13 @@
               <div class="flex flex-row justify-center gap-2">
                 <router-link
                   :to="{ name: 'edit-product', params: { id: product.id } }"
-                  class="bg-green-200 py-1 px-2 rounded"
+                  class="bg-blue-400 py-1 px-2 rounded"
                 >
                   Edit
                 </router-link>
                 <button
                   @click="deleteProduct(product.id)"
-                  class="bg-red-600 text-white py-1 px-2 rounded"
+                  class="bg-red-500 text-white py-1 px-2 rounded"
                 >
                   Delete
                 </button>

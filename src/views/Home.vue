@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto p-4">
-    <h1 class="text-2xl font-bold mb-6 text-center">
-      Category and Product Table
+    <h1 class="mb-8 text-3xl font-bold">
+      Product Management Application
     </h1>
     <CategoryTable />
   </div>
@@ -18,4 +18,5 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+</style>
