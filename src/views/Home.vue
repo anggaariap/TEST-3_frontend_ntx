@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import CategoryTable from "../components/CategoryTable.vue";
+import CategoryTable from "../components/TableCategory.vue";
 
 export default {
   name: "Home",
